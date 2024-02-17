@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticketing</title>
+
+    <!-- DaisyUI and TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter and Raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonts Style -->
+    <style>
+        .raleway{
+            font-family: "Raleway", sans-serif;
+        }
+        .inter{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="container mx-auto raleway">
+        <nav class="mt-4 mb-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="font-extrabold text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 flex gap-14 text-lg font-medium text-[#030712B2]">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="flex gap-3 items-center border-2 border-[#1dd10066] px-8 py-4 bg-[#1dd1001a] rounded-xl">
+                        <p class="p-0 text-xl font-bold text-[#1DD100]">Bus</p>
+                        <div>
+                            <img src="./images/bus-icon.png" alt="">
+                        </div>
+                    </button>
+                </div>
+              </div>
+        </nav>
+        <div class="bg-[linear-gradient(180deg,rgba(3,7,18,0.50),rgba(3,7,18,0.00)),url(./images/banner.png)] bg-cover bg-no-repeat h-[650px] bg-center rounded-3xl text-center text-white">
+            <h1 class="text-6xl font-extrabold leading-[86px] text-white pt-20 pb-4">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="w-[691px] mx-auto leading-7">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <div class="mt-8">
+                <button class="text-black bg-[#1DD100] px-8 py-5 text-xl font-bold rounded-xl hover:opacity-80">Buy Tickets</button>
+            </div>
+            <div class="relative">
+                <div class="text-left flex justify-center items-center gap-6 absolute top-[150px] px-[20%]">
+                    <div class="flex gap-4 items-center p-8 pr-12 bg-white rounded-[24px] border-b-4 border-[#1DD100]">
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-4xl font-bold text-black">500K+</h4>
+                            <p class="text-gray-600">Registered users</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center p-8 pr-12 bg-white rounded-[24px] border-b-4 border-[#1DD100]">
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-4xl font-bold text-black">500K+</h4>
+                            <p class="text-gray-600">Registered users</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center p-8 pr-12 bg-white rounded-[24px] border-b-4 border-[#1DD100]">
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h4 class="text-4xl font-bold text-black">500K+</h4>
+                            <p class="text-gray-600">Registered users</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-48">
+        <section class="container mx-auto">
+            <h2 class="font-bold text-4xl text-center mb-12">Best offers for you</h2>
+            <div class="flex gap-6 justify-center">
+                <div class="flex items-center bg-[#FFBF0F] px-12 rounded-3xl">
+                    <div class="inter">
+                        <h3 class="text-4xl font-black">15% OFF</h3>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-gray-500 text-lg font-medium">use by January 2024</p>
+                    </div>
+                    <img class="ml-14 mr-7" src="./images/cupon-devider.png" alt="">
+                    <div class="raleway">
+                        <h3 class="text-3xl font-bold">NEW15</h3>
+                        <p class="text-gray-500 text-lg font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-[#F78C9C] px-12 rounded-3xl">
+                    <div class="inter">
+                        <h3 class="text-4xl font-black">20% OFF</h3>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p class="text-gray-500 text-lg font-medium">use by January 2024</p>
+                    </div>
+                    <img class="ml-14 mr-7" src="./images/cupon-devider.png" alt="">
+                    <div class="raleway">
+                        <h3 class="text-3xl font-bold">Couple 20</h3>
+                        <p class="text-gray-500 text-lg font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        <div class="flex justify-center">
+            <button class="flex gap-3 items-center border-2 border-[#1dd10066] px-8 py-4 mt-14 rounded-xl">
+                <p class="p-0 text-xl font-bold text-[#1DD100]">See All Offers</p>
+            </button>
+        </div>
+        </section>
+        <section class="mt-28 border-t-2 border-[#1DD100] rounded-[88px]">
+            <div class="container mx-auto mt-28">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold raleway">P.H Paribahan</h1>
+                    <p class="inter w-[736px] text-gray-500 mx-auto mt-6 mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
