@@ -1,6 +1,7 @@
 const seats = document.getElementsByClassName('seat-btn');
 let seatCount = 0;
 let seatRemain = 40;
+let seatTotalPrice = 0;
 
 for(const seat of seats){
     seat.addEventListener('click', function(event){
@@ -46,7 +47,11 @@ for(const seat of seats){
             division.appendChild(seatPrice);
 
             seatDisplay.appendChild(division);
-            console.log(seatDisplay)
+            
+            // Total seat price count
+            const totalSeatCosting = document.getElementById('totalSeatPrice');
+            seatTotalPrice = seatTotalPrice + 550;
+            setInnerText('totalSeatPrice', seatTotalPrice);
 
         }
 
