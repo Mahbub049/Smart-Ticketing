@@ -2,6 +2,8 @@ const seats = document.getElementsByClassName('seat-btn');
 let seatCount = 0;
 let seatRemain = 40;
 let seatTotalPrice = 0;
+let seatGrandTotal = 0;
+let discountPrice = 0;
 
 for(const seat of seats){
     seat.addEventListener('click', function(event){
@@ -53,10 +55,31 @@ for(const seat of seats){
             seatTotalPrice = seatTotalPrice + 550;
             setInnerText('totalSeatPrice', seatTotalPrice);
 
+            //grand total
+            seatGrandTotal = seatTotalPrice;
+            setInnerText('grand-total', seatGrandTotal);
         }
-
+        
     })
+
+        //Grand Total
+    document.getElementById('apply-btn').addEventListener('click', function(){
+        const couponCode = document.getElementById('copoun').value;
+        const couponDiv = document.getElementById('copoun-div');
+        if(couponCode === "NEW15" && seatCount === 4){
+            couponDiv.classList.add('hidden');
+
+            // Discount Calculate
+            discountPrice = seatTotalPrice * 0.15;
+            seatGrandTotal = seatTotalPrice - discountPrice;
+            setInnerText('grand-total', seatGrandTotal);
+            console.log(discountPrice)
+        }
+    })
+
 }
+
+
 
 function setInnerText(elementName, value){
     document.getElementById(elementName).innerText = value;

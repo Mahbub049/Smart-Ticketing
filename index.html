@@ -340,15 +340,15 @@
                             </div>
 
                             <!-- Coupon -->
-                            <div class="relative flex mt-4 mb-6">
-                                <input type="text" placeholder="Have any copupon?" class="px-6 py-5 rounded-lg w-full">
-                                <button class="text-white bg-[#1DD100] py-3 px-4 rounded-lg absolute right-2 top-2">Apply</button>
+                            <div id="copoun-div" class="relative flex mt-4 mb-6">
+                                <input id="copoun" type="text" placeholder="Have any copupon?" class="px-6 py-5 rounded-lg w-full">
+                                <button id="apply-btn" class="text-white bg-[#1DD100] py-3 px-4 rounded-lg absolute right-2 top-2">Apply</button>
                             </div>
 
                             <!-- Grand Total Price -->
                             <div class="font-medium flex justify-between mb-4">
                                 <h3>Grand Total</h3>
-                                <p>BDT <span>1100</span></p>
+                                <p>BDT <span id="grand-total">0</span></p>
                             </div>
                         </div>
 
@@ -366,7 +366,22 @@
                                 <h4 class="font-semibold">Email ID</h4>
                                 <input type="email" placeholder="Enter your email id" class="mt-4 px-6 py-5 rounded-xl border w-full bg-[#0307121A]">
                             </div>
-                            <button class="text-white bg-[#1DD100] w-full px-7 py-5 text-xl font-extrabold rounded-2xl mb-6">Next</button>
+
+                            <button class="text-white bg-[#1DD100] w-full px-7 py-5 text-xl font-extrabold rounded-2xl mb-6" onclick="my_modal_5.showModal()" disabled>Next</button>
+                            <dialog id="my_modal_5" class="modal py-20 modal-bottom sm:modal-middle">
+                            <div class="modal-box p-12 text-center max-w-3xl">
+                                <img class="mx-auto" src="./images/success.png" alt="">
+                                <h3 class="font-bold text-2xl text-[#27AE60] py-9">SUCCESS</h3>
+                                <h3 class="text-[#4A4A4A] text-xl font-medium mb-4">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you.</h3>
+                                <p class="text-[#4A4A4A] text-xl font-light">Shortly you will find a confirmation in your email.</p>
+                                <div class="modal-action mt-8 flex justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class=" bg-[#27AE60] rounded-[32px] text-xl font-semibold text-white py-4 px-20 hover:opacity-80">Continue</button>
+                                </form>
+                                </div>
+                            </div>
+                            </dialog>
 
                             <div class="flex justify-around">
                                 <a href="" class="underline">Terms and Conditions</a>
