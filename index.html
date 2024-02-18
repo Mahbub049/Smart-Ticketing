@@ -159,7 +159,7 @@
                             <div class="flex gap-2 items-center inter p-4 bg-[#1DD10026] rounded-xl">
                                 <div><img src="./images/seat-green.png" alt=""></div>
                                 <div class="flex gap-1 text-lg font-medium text-[#1DD100]">
-                                    <span>40</span>
+                                    <span id="seatRemain">40</span>
                                     <p>Seats left</p>
                                 </div>
                             </div>
@@ -230,82 +230,82 @@
                         <!-- Seats -->
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">A</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">A4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">B</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">B4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">C</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">C4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">D</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">D4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">E</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">E4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">F</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">F4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">G</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">G4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">H</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">H4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">I</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">I4</button>
                         </div>
 
                         <div class="inter text-lg font-medium text-[#03071280] grid grid-cols-5 gap-8">
                             <p class="flex justify-center items-center ">J</p>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J1</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J2</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J3</button>
-                            <button class="bg-[#F7F8F8] seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J4</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J1</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J2</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J3</button>
+                            <button class="seat-btn rounded-xl px-11 py-4 bg-[#F7F8F8]">J4</button>
                         </div>
                     </div>
                 </div>
@@ -319,25 +319,15 @@
                         <hr class="mt-6 mb-6 border-2 border-dashed text-gray-800">
 
                         <div class="p-8 border-2 bg-[#F7F8F8]">
-                            <div class="flex justify-between text-base font-medium">
-                                <h4>Seat <span class="text-white bg-[#1DD100] px-2 text-xs font-bold rounded-3xl">2</span></h4>
+                            <div class="flex justify-between text-base font-medium relative">
+                                <h4>Seat <span id="totalSeat" class=" absolute text-white bg-[#1DD100] px-2 text-xs font-bold rounded-3xl">0</span></h4>
                                 <h4>Class</h4>
                                 <h4>Price</h4>
                             </div>
                             <div>
                                 <hr class="my-4 border-2 border-dashed text-gray-800">
                             </div>
-                            <div class="flex flex-col gap-4">
-                                <div class="flex justify-between text-gray-800">
-                                    <h4>C1</h4>
-                                    <h4 class="ml-9">Economy</h4>
-                                    <h4>550</h4>
-                                </div>
-                                <div class="flex justify-between text-gray-800">
-                                    <h4>C1</h4>
-                                    <h4 class="ml-9">Economy</h4>
-                                    <h4>550</h4>
-                                </div>
+                            <div id="seatInfo" class="flex flex-col gap-4">
                             </div>
                             <div>
                                 <hr class="my-4 border-2 text-gray-800">
@@ -388,5 +378,7 @@
             </div>
         </section>
     </main>
+
+    <script src="./index.js"></script>
 </body>
 </html>
