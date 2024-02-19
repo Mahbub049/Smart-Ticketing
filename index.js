@@ -94,7 +94,7 @@ for(const seat of seats){
 document.getElementById('phone').addEventListener('keyup', function(event){
     const phone = event.target.value;
     const button = document.getElementById('nextButton')
-    if(seatCount>0 && phone>0){
+    if(seatCount>0 && phone>=0){
         button.removeAttribute('disabled');
     }
     else{
