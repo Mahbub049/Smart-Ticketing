@@ -9,7 +9,7 @@ for(const seat of seats){
     seat.addEventListener('click', function(event){
         // Not Allowed more than 4 seats
         if(seatCount>=4){
-            alert('Not Allowed');
+            alert('You can not add more than 4 seats');
             return;
         }
         else{
@@ -65,23 +65,26 @@ for(const seat of seats){
                 button.removeAttribute('disabled');
             }
         }
-        
     })
 
-        //Grand Total
     document.getElementById('apply-btn').addEventListener('click', function(){
         const couponCode = document.getElementById('copoun').value;
         const couponDiv = document.getElementById('copoun-div');
+        const discountDiv = document.getElementById('discount-disabled');
         if(couponCode === "NEW15" && seatCount === 4){
             couponDiv.classList.add('hidden');
+            discountDiv.classList.remove('hidden');
             // Discount Calculate
             discountCalculate(0.15)
+            setInnerText('totalDiscount', discountPrice);
             setInnerText('grand-total', seatGrandTotal);
         }
         else if(couponCode === "Couple 20" && seatCount === 4){
             couponDiv.classList.add('hidden');
+            discountDiv.classList.remove('hidden');
             // Discount Calculate
             discountCalculate(0.20)
+            setInnerText('totalDiscount', discountPrice);
             setInnerText('grand-total', seatGrandTotal);
         }
     })
@@ -93,6 +96,9 @@ document.getElementById('phone').addEventListener('keyup', function(event){
     const button = document.getElementById('nextButton')
     if(seatCount>0 && phone>0){
         button.removeAttribute('disabled');
+    }
+    else{
+        button.setAttribute('disabled', true);
     }
 })
 
