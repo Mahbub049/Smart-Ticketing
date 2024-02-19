@@ -58,7 +58,12 @@ for(const seat of seats){
             //grand total
             seatGrandTotal = seatTotalPrice;
             setInnerText('grand-total', seatGrandTotal);
-
+            
+            const phone = document.getElementById('phone').value;
+            const button = document.getElementById('nextButton')
+            if(seatCount>0 && phone>0){
+                button.removeAttribute('disabled');
+            }
         }
         
     })
@@ -100,6 +105,6 @@ function setInnerText(elementName, value){
     document.getElementById(elementName).innerText = value;
 }
 
-// function setBackgroundColor(elementName){
-//     document.getElementById(elementName).classList.add('bg-[#1DD100]')
-// }
+function reload(){
+    location.reload();
+}
